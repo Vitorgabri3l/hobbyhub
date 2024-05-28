@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@300&family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@300&family=Inter&display=swap');
+
+.card_main {
+    background-image: url(../assets/Card_bike.jpg);
+    background-size: cover;
+    width: 20%;
+    height: 90%;
+    margin: 3%;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.card_main h3 {
+    margin: 0;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+    font-family: Lilita One;
+}
+
+.footer_card {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: flex-end;
+}
+
+#content_footer {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
+}
+
+.footer_card p {
+    display: block;
+    color: black;
+    margin: 2%;
+    padding-left: 5%;
+    font-size: 1em;
+    font-family: Lilita One;
+}
+
+#btn  {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+
+#btn button {
+    display: flex;
+    height: 50%;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    background-color: #150039;
+    border: none;
+    border-radius: 5px;
+    color: #EBFF00;
+    font-family: Lilita One;
+}
+
+.link_btn_card {
+    display: flex;
+    color: transparent;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#btn button:hover {
+    color: #ffd000;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .card_main {
+        width: 50vw;
+        height: 35vh;
+    }
+
+    .card_main h3 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+}

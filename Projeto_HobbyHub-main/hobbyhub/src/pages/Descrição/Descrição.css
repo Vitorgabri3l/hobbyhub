@@ -1,0 +1,165 @@
+.descricao_main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.logo_descricao {
+    max-width: 10%;
+    margin-left: 3%;
+    margin-top: -2%;
+}
+
+.logo_descricao img {
+    width: 100%;
+}
+
+.tittle_page_descricao {
+    padding-top: 5vh;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.tittle_page_descricao h1 {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 999;
+    color: white;
+    font-family: Lilita One;
+    font-weight: 400;
+    font-size: 2.3em;
+}
+
+.content_descricao {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    align-content: flex-start;
+}
+
+.left_content_descricao {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 5%;
+}
+
+#hobby_inf {
+    margin-top: 40%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+#hobby_inf p {
+    color: white;
+    font-family: Lilita One;
+    font-weight: 400;
+    font-size: 15pt;
+    margin: 0;
+    margin-bottom: 3%;
+}
+
+.right_content_descricao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    height: 70%;
+}
+
+.descricao {
+    background-color: white;
+    height: 80%;
+    width: 90%;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.btn_descricao {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin-top: 5%;
+}
+
+.btn_descricao #confirm,
+.btn_descricao #comments {
+    width: 35%;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    font-family: Lilita One;
+    font-size: 15pt;
+    font-weight: 400;
+}
+
+.btn_descricao #confirm {
+    background-color: #8A01FF;
+}
+
+.btn_descricao #confirm:hover {
+    background-color: #6900c5;
+}
+
+.btn_descricao #comments {
+    background-color: #C785FF;
+}
+
+.btn_descricao #comments:hover {
+    background-color: #6900c5;
+}
+
+/* Adicione uma regra de mídia para estilos responsivos para telas menores */
+@media screen and (max-width: 768px) {
+    .descricao_main {
+        flex-direction: column; /* Altera a direção da flexbox para empilhar elementos verticalmente */
+    }
+
+    .tittle_page_descricao h1 {
+        width: 100%;
+        font-size: 1.8em; /* Reduz o tamanho da fonte do título em telas menores */
+    }
+
+    .content_descricao {
+        flex-direction: column;
+    }
+
+    .left_content_descricao,
+    .right_content_descricao {
+        width: 100%; /* Preenche toda a largura em telas menores */
+        margin-top: 0; /* Reduz o espaço superior em telas menores */
+    }
+
+    #hobby_inf {
+        margin-top: 10vh;
+    }
+
+    .descricao {
+        width: 100%; /* Preenche toda a largura em telas menores */
+        max-height: 50vh;
+    }
+
+    .btn_descricao {
+        flex-direction: column; /* Empilha os botões verticalmente */
+    }
+
+    .btn_descricao #confirm,
+    .btn_descricao #comments {
+        width: 100%; /* Preenche toda a largura em telas menores */
+        margin-top: 2%; /* Adiciona espaço entre os botões em telas menores */
+    }
+}

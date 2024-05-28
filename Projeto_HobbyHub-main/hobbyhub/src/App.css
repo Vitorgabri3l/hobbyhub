@@ -1,0 +1,11 @@
+.Container {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100vw;
+  background: linear-gradient(180deg, #6700BF 0%, #000 63.97%, #000 100%);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  display: flex;
+  margin: 0;
+  padding: 0;
+}

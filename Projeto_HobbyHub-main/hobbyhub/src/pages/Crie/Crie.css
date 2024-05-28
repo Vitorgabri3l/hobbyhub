@@ -1,0 +1,236 @@
+.create_main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100vw;
+    height: 100vh;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.tittle_page_create {
+    padding-top: 5vh;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.tittle_page_create h1 {
+    z-index: 999;
+    color: white;
+    font-family: Lilita One;
+    font-weight: 400;
+    font-size: 2.3em;
+}
+
+.content_create {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    max-width: 100vw;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    align-content: flex-start;
+}
+
+.left_content_create {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10%;
+}
+
+.left_content_create input[type="file"] {
+    display: flex;
+}
+
+label.upload_button_create {
+    display: flex;
+    margin: 0;
+    margin-bottom: -10%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+.upload_button_create {
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.upload_button_create svg {
+    width: 5%;
+}
+ 
+.selected-image-preview {
+    margin-top: -10%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.selected-image-preview img {
+    width: 25vw;
+    height: 40vh;
+    border-radius: 5%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    background-size: cover;
+}
+
+.hobby_inf {
+    margin-top: 15%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hobby_inf #ipt {
+    border: none;
+    width: 70%;
+    height: 4vh;
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 2%;
+}
+
+.hobby_inf #ipt:hover {
+    background-color: #c2c2c2;
+    transition: all 0.5s ease;
+}
+
+.hobby_inf #ipt:focus {
+    outline: none;
+}
+
+.hobby_inf p {
+    color: white;
+    font-family: Lilita One;
+    font-weight: 400;
+    font-size: 15pt;
+    margin: 0;
+    margin-bottom: 3%;
+}
+
+.right_content_create {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 100vh;
+}
+
+.right_content_create button {
+    margin-top: 5%;
+    background-color: #C785FF;
+    border: none;
+    width: 40%;
+    height: 7vh;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: Lilita One;
+    color: black;
+    font-size: 15pt;
+}
+
+.right_content_create button:hover {
+    background-color: #6900c5;
+    transition: all 0.5s ease;
+}
+
+#textarea {
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 10pt;
+    font-family: Lilita One;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+
+    .create_main {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 150vh;
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: column;
+    }
+
+    .tittle_page_create {
+        width: 100vw;
+    }
+
+    .tittle_page_create h1 {
+        font-size: 1.8em; /* Reduzir o tamanho da fonte do título */
+    }
+    
+    .left_content_create .upload_button_create {
+        margin: 0;
+    }
+
+    .content_create {
+        width: 100vw;
+        align-items: center; /* Centralizar os elementos */
+        flex-direction: column;
+    }
+
+    .left_content_create {
+        display: flex;
+        height: 80vh;
+        width: 80%; /* Preencher a largura da tela */
+        margin-top: 50vh;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .upload_button_create {
+        width: 100%; /* Preencher a largura do contêiner pai */
+    }
+
+    .selected-image-preview {
+        margin-top: 5%;
+        width: 80vw;
+        justify-content: center;
+    }
+
+    .selected-image-preview img {
+        width: 80%; /* Ajustar a largura da imagem */
+        margin-top: 10vh;
+    }
+
+    .hobby_inf {
+        width: 100%; /* Preencher a largura da tela */
+        margin: 5% 0; /* Aumentar o espaçamento superior e inferior */
+    }
+
+    .hobby_inf #ipt {
+        width: 100%; /* Preencher a largura do contêiner pai */
+    }
+
+    .right_content_create {
+        width: 100%; /* Preencher a largura da tela */
+        margin-top: 10vh;
+
+    }
+
+    .right_content_create button {
+        width: 80%; /* Ajustar a largura do botão */
+        height: 5vh;
+    }
+
+    #textarea {
+        width: 80vw;
+    }
+}

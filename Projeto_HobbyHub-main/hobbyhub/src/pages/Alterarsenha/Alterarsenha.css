@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@300&family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@300&family=Inter&display=swap');
+
+.alterarsenha{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    flex-direction: column;
+    
+          
+}
+
+.alterarsenha h1 {
+    padding-top: 5vh;
+    color: #FFF;
+    font-family: Lilita One;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+
+}
+
+.alterarsenha label {
+   margin: 1.5%;
+}

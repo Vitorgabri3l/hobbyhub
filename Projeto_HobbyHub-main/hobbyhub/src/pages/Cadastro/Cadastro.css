@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@300&family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@300&family=Inter&display=swap');
+
+/* Estilos gerais para dispositivos maiores */
+.main_cadastro {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.left_cadastro {
+    border-radius: 15px;
+    background: #D9D9D9;
+    width: 30%;
+    max-width: 450px;
+    height: 80%;
+    max-height: 80vh;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: 'Lilita One', cursive;
+}
+
+.left_cadastro h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 300;
+    color: black;
+}
+
+.left_cadastro p {
+    margin-top: 5vh;
+    font-size: 1.6em;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.left_cadastro img {
+    height: 70%;
+}
+
+.right_cadastro {
+    width: 40%;
+    height: 90vh;
+    max-width: 600px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card_cadastro {
+    margin-top: 5vh;
+    width: 90%;
+    text-align: center;
+    justify-content: center;
+}
+
+.card_cadastro h1 {
+    margin: 0;
+    color: #FFF;
+    font-family: Lilita One;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.card_cadastro p {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    margin-bottom: 5%;
+}
+
+.input_cad {
+    width: 30vw;
+    max-width: 450px;
+    height: 3vh;
+    border-radius: 15px;
+    border: 1px solid #000;
+    background: #FFF;
+    margin-bottom: 1%;
+    padding: 15px;
+    margin-bottom: 3%;
+}
+
+.input_cad::placeholder {
+    font-size: 16px;
+}
+
+.input_cad:hover::placeholder {
+    background-color: #ffffff;
+    transition: all 0.5s ease;
+    font-size: 10px;
+    transform: translateY(-14px);
+}
+
+.input_cad:focus {
+    outline: none;
+}
+
+.btn_cad {
+    margin-top: 3%;
+    width: 25vw;
+    height: 7vh;
+    border-radius: 15px;
+    background: #8A01FF;
+    color: #FFF;
+    font-family: Lilita One;
+    font-size: 1.3em;
+    font-style: normal;
+    line-height: normal;
+    border: none;
+}
+
+.btn_cad:hover {
+    background-color: #6900c5;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+/* Estilos específicos para telas menores (exemplo: até 768px) */
+@media (max-width: 768px) {
+    .main_cadastro {
+        flex-direction: column; /* Empilhar elementos em telas menores */
+        max-height: 100vh;
+    }
+
+    .left_cadastro {
+        width: 70%; /* Reduzir a largura em telas menores */
+        height: 30vh; /* Reduzir a altura em telas menores */
+        margin-top: -5vh;
+        background-color: transparent;
+        color: white;
+    }
+
+    .left_cadastro h1 {
+        font-size: 1.6em; /* Reduzir o tamanho de fonte em telas menores */
+        color: white;
+    }
+
+    .left_cadastro p {
+        margin: 0;
+        font-size: 1.2em; /* Reduzir o tamanho de fonte em telas menores */
+    }
+
+    .left_cadastro img {
+        width: 50vw; /* Reduzir a altura da imagem */
+        margin-top: -3vh;
+    }
+
+    .right_cadastro {
+        display: flex;
+        justify-content: center;
+        height: 60vh;
+        width: 90%; /* Reduzir a largura em telas menores */
+    }
+
+    .card_cadastro h1 {
+        font-size: 30px; /* Reduzir o tamanho de fonte em telas menores */
+    }
+
+    .card_cadastro p {
+        font-size: 14px; /* Reduzir o tamanho de fonte em telas menores */
+        margin-bottom: 3%; /* Aumentar o espaçamento inferior */
+    }
+
+    .input_cad {
+        width: 80%; /* Ajustar a largura para telas menores */
+    }
+
+    .btn_cad {
+        width: 80%; /* Ajustar a largura para telas menores */
+        font-size: 1.2em; /* Reduzir o tamanho de fonte do botão */
+    }
+}

@@ -1,0 +1,148 @@
+@font-face{
+  font-family: "menufont";
+  src: url("../Fonts/LilitaOne-Regular.ttf");
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+.sidebar {
+  position: fixed;
+  top: 3%;
+  left: 1.5%;
+  width: 15%;
+  padding: 0;
+  margin: 0;
+  z-index: 1006;
+}
+
+.menu_button {
+  border: none;
+  padding: 0.3%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.menu_button.active > .lines_btn_menu.left{
+  width: 60%;
+  transform: rotateZ(50deg) translate(-4px,3px);
+}
+
+.menu_button.active > .lines_btn_menu.right{
+  width: 60%;
+  transform: rotateZ(-50deg) translate( -1px, 10px);
+}
+
+.lines_btn_menu{
+  width: 90%;
+  height: 3px;
+  background-color: rgb(206, 206, 206);
+  border-radius: 20px;
+}
+
+#btn_menu_text{
+  font-family: "menufont";
+  color: #8484ff;
+}
+
+.menu_button.active #btn_menu_text{
+  font-family: "menufont";
+  color: #8484ff;
+  margin-top: 2px;
+}
+
+.menu_ul {
+  display: flex;
+  width: 100%;
+  height: 40vh;
+  margin: 0;
+  flex-direction: column;
+  align-items: start;
+  margin-top: 10px;
+  gap: 10px;
+  list-style: none;
+  animation: slideDown 0.7s ease forwards; 
+  background-color: rgb(24, 20, 20);
+  justify-content: center;
+  align-items: center;
+  border-radius: 1vh;
+  padding: 0;
+}
+
+.menu_ul button {
+  background-color: #524d4d;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  border-radius: 10px;
+  width: 9vw;
+  margin: 3%;
+  height: 3.5vh;
+  padding-left: 10px;
+  padding-top: 2px;
+  align-items: center;
+  color: white;
+}
+
+.menu_ul button:hover{
+  background-color: #8484ff;
+  transition: all 0.3s ease;
+}
+
+.menu_ul li:hover{
+  cursor: pointer;
+}
+
+.icon_house, .icon_adress, .icon_login, .icon_home, .icon_contact, .icon_about  {
+  width: 20px;
+  border-radius: 20px;
+}
+
+.icon_login {
+  padding-right: 4px;
+}
+
+.Login a, .Cadastro a, .Inicio a, .Contatos a, .Home a, .Sobre a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 35%;
+  }
+
+  .menu_ul li {
+    width: 25vw;
+    margin-left: -15%;
+    margin-top: -2%;
+  }
+
+  .menu_ul button {
+    width: 25vw;
+  }
+
+  .icon_house, .icon_adress, .icon_login, .icon_home, .icon_contact, .icon_about  {
+    width: 20px;
+    background-color: transparent;
+  }
+
+}

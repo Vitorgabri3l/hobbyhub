@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@300&family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@300&family=Inter&display=swap');
+
+.footer_container {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.footer_content {
+    width: 100%;
+    color: white !important;
+    text-align: center;
+}
+
+.footer_content ul {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 40px;
+    margin-left: 0;
+    padding: 0;
+    margin-top: 2%;
+}
+
+.footer_content ul li {
+    list-style-type: none;
+}
+
+.icons_content {
+    margin-top: 2%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+}
+
+.icons_content a {
+    color: white;
+}
+
+.icon_footer {
+    display: flex;
+    width: 6vw;
+    height: 7vh;
+}
+
+.footer_content ul li button{
+    font-family: Lilita One;
+    background: transparent;
+    color: #007bff;
+    border: none;
+    cursor: pointer;
+    font-size: 1.9vh;
+}
+
+.footer_content ul li button:hover{
+    color: #6610f2;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    .icon_footer {
+        display: flex;
+        width: 15vw;
+        min-width: 14vw;
+        height: 7vh;
+    }
+
+    .icons_content {
+        gap: 40px;
+    }
+}

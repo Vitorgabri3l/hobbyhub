@@ -1,0 +1,368 @@
+.main_inicio {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #1C072E;
+    box-sizing: border-box;
+}
+
+.section0 {
+    height: 100vh;
+    background: linear-gradient(180deg, #500096 0%, #000 65.61%, #000 100%);
+}
+
+#btn_login {
+    display: flex;
+    z-index: 1003;
+    position: fixed;
+    right: 5px;
+    top: 5px;
+}
+
+#btn_login a {
+    text-decoration: none;
+}
+
+#btn_login button {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    cursor: pointer;
+    justify-content: center;
+    align-items: end;
+    background: transparent;
+    border: none;
+}
+
+#btn_login button p {
+    display: flex;
+    width: 100%;
+    color: #8484ff;
+    margin: 0;
+    font-family: Lilita One;
+    font-size: 1.1em;
+    justify-content: center;
+}
+
+.container_logo {
+    width: 100%;
+    height: 30vh;
+    align-items: flex-start;
+    justify-content: center;
+    display: flex;
+}
+
+.container_logo img {
+    width: 30%;
+    height: 35vh;
+    max-width: 300px;
+    min-height: 235px;
+    margin-top: 7vh;
+}
+
+.main_content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.container_p1 {
+    margin-top: 10%;
+    display: flex;
+    margin-bottom: 25%;
+    width: 55%;
+    margin-left: auto;
+    justify-content: center;
+}
+
+.main_content p {
+    width: 70%;
+    text-align: left;
+    color: white;
+    font-family: Lilita One;
+    font-weight: 400;
+    font-size: 15pt;
+}
+
+.section1 {
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    position: relative;
+}
+
+.section1 h1 {
+    width: 30%;
+    color: white;
+    font-size: 40pt;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-family: Lilita One;
+    font-weight: 400;
+    font-size: 35pt;
+}
+
+.text_overp1 {
+    position: absolute;
+    top: 40%;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-family: Lilita One;
+    font-weight: 400;
+    font-size: 15pt;
+}
+
+.text_overp1 p{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    align-items: center;
+}
+
+.section1 img {
+    width: 100%;
+    height: 100vh;
+    opacity: 0.4;
+    object-fit: cover;
+    object-position: 75% 25%;
+}
+
+.section2 {
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    position: relative;
+}
+
+.section2 h1 {
+    width: 30%;
+    color: white;
+    font-size: 40pt;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-family: Lilita One;
+    font-weight: 400;
+    font-size: 35pt;
+}
+
+.text_overp2 {
+    position: absolute;
+    top: 35%;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-family: Lilita One;
+    font-weight: 400;
+    font-size: 15pt;
+}
+
+.text_overp2 p{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    align-items: center;
+}
+
+.section2 img {
+    width: 100%;
+    height: 100vh;
+    opacity: 0.4;
+    object-fit: cover;
+    object-position: 75% 25%;
+}
+
+.section3 {
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    position: relative;
+}
+
+.section3 h1 {
+    width: 30%;
+    color: white;
+    font-size: 40pt;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-family: Lilita One;
+    font-weight: 400;
+    font-size: 35pt;
+}
+
+.text_overp3 {
+    position: absolute;
+    top: 35%;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-family: Lilita One;
+    font-weight: 400;
+    font-size: 15pt;
+}
+
+.text_overp3 p{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    align-items: center;
+}
+
+.section3 img {
+    width: 100%;
+    height: 100vh;
+    opacity: 0.4;
+    object-fit: cover;
+    object-position: 75% 25%;
+}
+
+.navigation {
+    position: fixed;
+    display: flex;
+    height: 40px;
+    width: 100%;
+    gap: 30px;
+    z-index: 999;
+    font-family: Lilita One;
+    font-size: 10pt;
+    justify-content: center;
+    padding-top: 5vh;
+    background-color: black;
+    align-items: center;
+    box-shadow: 0px 10px black;
+}
+
+.navigation h1 {
+    color: #8181fc;
+}
+
+.navigation h1:hover {
+    color: #5a5aff;
+    cursor: pointer;
+}
+
+.selected {
+    text-decoration: underline; /* Adicione o estilo de sublinhado desejado */
+  }
+  
+  .selected:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 75%;
+    height: 2px; 
+    background-color: #ffffff; 
+    transform: scaleX(0); 
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .selected:hover:after {
+    transform: scaleX(1); 
+  }
+  
+  /* Estilos específicos para telas menores (exemplo: até 768px) */
+@media screen and (max-width: 768px) {
+    .section0 {
+        height: 100vh; /* Evitar altura fixa em telas pequenas */
+    }
+
+    .navigation {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        width: 100%;
+        gap: 8px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 15vh;
+        text-align: center;
+    }
+
+    .navigation h1{
+        margin: 0;
+        padding: 0;
+        font-size: 12pt;
+    }
+
+    #btn_login {
+        position: relative; /* Voltar à posição relativa para o fluxo de documentos */
+        text-align: right; /* Alinhar o botão à direita */
+        width: 10vw;
+        justify-content: flex-end;
+        position: fixed;
+    }
+
+    .container_logo {
+        height: auto; /* Evitar altura fixa em telas pequenas */
+        text-align: center; /* Alinhar o conteúdo ao centro */
+    }
+
+    .container_logo img {
+        width: 80%; /* Reduzir a largura da imagem */
+        height: auto; /* Evitar altura fixa em telas pequenas */
+        max-width: none; /* Remover a largura máxima da imagem */
+        margin-top: 5vh; /* Ajustar margem superior */
+    }
+
+    .main_content {
+        margin-top: 5%; /* Ajustar margem superior */
+    }
+
+    .container_p1 {
+        width: 90%; /* Ajustar a largura do conteúdo */
+        margin-left: auto;
+    }
+
+    .main_content p {
+        margin-left: -10%;
+        width: 100vw; /* Utilizar toda a largura disponível */
+        text-align: center; /* Centralizar o texto */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section1 h1,
+    .section2 h1,
+    .section3 h1 {
+        flex-direction: column;
+        width: 90%; /* Ajustar a largura do título */
+        font-size: 30pt; /* Reduzir o tamanho da fonte */
+    }
+    
+    .text_overp1,
+    .text_overp2,
+    .text_overp3 {
+        top: 30%; /* Ajustar a posição do texto sobreposto */
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .text_overp1 p,
+    .text_overp2 p,
+    .text_overp3 p {
+        width: 80%; /* Ajustar a largura do texto sobreposto */
+    }
+}
