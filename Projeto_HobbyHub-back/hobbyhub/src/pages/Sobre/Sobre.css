@@ -1,0 +1,265 @@
+.main_about {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo_about {
+    margin-top: -3%;
+    width: 100%;
+    height: 20%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.logo_about img {
+    width: 20vw;
+    height: 30vh;
+}
+
+.tittle_about {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.tittle_about h1 {
+    margin-top: -7vh;
+    color: white;
+    font-family: Lilita One;
+    font-weight: 400;
+}
+
+.content_about_left, .content_about_right {
+    display: flex;
+    place-self: center;
+    width: 70%;
+    height: 35vh;
+    justify-content: center;
+    max-width: 1300px;
+}
+
+.content_about_left p, .content_about_right p {
+    height: 20vh;
+    margin: 0;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-family: Lilita One;
+    font-weight: 400;
+    overflow-y: auto;
+}
+
+.container_img_left {
+    padding: 0;
+    margin-top: 3%;
+    margin-left: 5vw;
+    height: 10vh;
+    width: 15vw;
+    border-radius: 50%;
+    background-size: cover;
+    
+}
+
+.container_img_right {
+    padding: 0;
+    margin-top: 3%;
+    margin-right: 10vw;
+    height: 10vh;
+    width: 15vw;
+    border-radius: 50%;
+    background-size: cover;
+}
+
+.container_img_left img, .container_img_right img {
+    height: 30vh;
+    width: 15vw;
+    border-radius: 50%;
+    max-width: 250px;
+    min-width: 240px;
+    object-fit: cover;
+    object-position: 99% 1%;
+}
+
+.section_about_left, .section_about_right {
+    display: flex;
+    margin-top: 3%;
+    width: 60%;
+    height: 80%;
+    background-color: #D9D9D9;
+}
+
+.footer_about {
+    display: flex;
+    margin-top: 20vh;
+}
+
+.btn_about {
+    display: flex;
+    height: 5vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    place-self: end; 
+    gap: 15px;
+}
+
+.btn_about a {
+    text-decoration: none;
+}
+
+#btn_linkedin {
+    display: flex;
+    flex-direction: row;
+    background: #1BADFF;
+    border: none;
+    color: white;
+    width: 8vw;
+    height: 3.5vh;
+    font-family: Lilita One;
+    font-weight: 400;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+#icon_linkedin {
+    width: 20px;
+    height: 15px;
+}
+
+#btn_linkedin:hover {
+    background-color: #008ddf;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#btn_github {
+    display: flex;
+    flex-direction: row;
+    background: #000000;
+    border: none;
+    color: white;
+    width: 7vw;
+    height: 3.5vh;
+    font-family: Lilita One;
+    font-weight: 400;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+#icon_git {
+    width: 20px;
+    height: 15px;
+}
+
+#btn_github:hover {
+    cursor: pointer;
+    background-color: #363636;
+}
+
+@media screen and (max-width: 768px) {
+    .logo_about {
+        height: 30%;
+    }
+
+    .logo_about img {
+        width: 40%;
+        height: auto;
+    }
+
+    .tittle_about h1 {
+        margin-top: 0;
+        font-size: 1.5rem;
+    }
+
+    .content_about_left, .content_about_right {
+        width: 90%;
+        margin-top: 20px;
+        height: 35vh;
+    }
+
+    .container_img_left, .container_img_right {
+        width: 30vw;
+        height: 15vh;
+        padding-top: 2vh;
+    }
+
+    .container_img_left img, .container_img_right img {
+        height: 15vh;
+        min-width: 30vw;
+    }
+
+    .section_about_left, .section_about_right {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .footer_about {
+        margin-top: 10vh;
+    }
+
+    .btn_about {
+        display: flex;
+        height: 5vh;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        place-self: end; 
+        gap: 10px;
+    }
+    
+    #btn_linkedin {
+        display: flex;
+        flex-direction: row;
+        background: #1BADFF;
+        border: none;
+        color: white;
+        width: 19vw;
+        height: 3.5vh;
+        font-family: Lilita One;
+        font-weight: 400;
+        border-radius: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #icon_linkedin {
+        width: 20px;
+        height: 15px;
+    }
+    
+    #btn_linkedin:hover {
+        background-color: #008ddf;
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+    
+    #btn_github {
+        display: flex;
+        flex-direction: row;
+        background: #000000;
+        border: none;
+        color: white;
+        width: 16vw;
+        height: 3.5vh;
+        font-family: Lilita One;
+        font-weight: 400;
+        border-radius: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #icon_git {
+        width: 20px;
+        height: 15px;
+    }
+    
+    #btn_github:hover {
+        cursor: pointer;
+    }
+}

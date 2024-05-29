@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@300&family=Lilita+One&display=swap');
+.contentinpts{
+    display: flex;
+    width: 100%;
+}
+
+.xd {
+    width: 80vw;
+}
+
+.ipt-loginpage{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 60vw;
+    max-width: 400px;
+    gap: 10px;
+
+}
+
+#Lbl{
+    align-self: flex-start;
+    margin-left: 10px;
+    font-size: large;
+    font-family: "Lilita One";
+    font-weight: 200;
+    font-style: italic;
+}
+.ipt-loginpage > .login_input{
+    height: 40px;
+    width: 100%;
+    border-radius: 250px 0px 0px 250px;
+    border: none;
+    font-size: 2vh;
+    padding: 10px;
+}
+
+.ipt-loginpage > .login_input:focus{
+   outline: none;
+}

@@ -1,0 +1,104 @@
+.main_contact {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.logo_contact {
+    display: flex;
+    justify-content: center;
+}
+
+.logo_contact img {
+    width: 20vw;
+    margin-top: -3vh;
+}
+
+h1 {
+    color: white;
+    font-family: Lilita One;
+    font-weight: 400;
+    margin-top: -3vh;
+}
+
+.contacts {
+    width: 100%;
+    height: 55vh;
+    display: flex;
+}
+
+#contact_email, #contact_phone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 55vh;
+    background-color: rgb(216, 216, 216);
+}
+
+#icon_email_contact, #icon_phone_contact {
+    width: 20vw;
+    height: 10vh;
+}
+
+#contact_email h1, #contact_phone h1 {
+    margin: 1vh;
+    color: black;
+    font-family: Lilita One;
+    font-weight: 400;
+    font-size: 25pt;
+}
+
+#contact_email p, #contact_phone p {
+    font-family: Lilita One;
+    font-weight: 400;
+    font-size: 15pt;
+}
+
+#contact_email h3, #contact_phone h3 {
+    margin: 0;
+    font-family: Lilita One;
+    font-weight: 400;
+    font-size: 20pt;
+}
+
+/* Media query for screens with a maximum width of 768px (adjust as needed) */
+@media (max-width: 768px) {
+    .logo_contact img {
+        width: 35vw; /* Increase image size for smaller screens */
+    }
+
+    h1 {
+        font-size: 15pt; /* Reduce the font size for smaller screens */
+    }
+
+    .contacts {
+        flex-direction: column;
+    }
+
+    #contact_email, #contact_phone {
+        width: 100%; /* Make the contact sections full width on smaller screens */
+        height: 50vh; /* Allow the height to adjust automatically */
+    }
+
+    #icon_email_contact, #icon_phone_contact {
+        width: 20vw; /* Increase the icon size for smaller screens */
+        height: auto; /* Allow the height to adjust automatically */
+    }
+
+    #contact_email h1, #contact_phone h1 {
+        font-size: 15pt; /* Increase the font size for smaller screens */
+    }
+
+    #contact_email p, #contact_phone p {
+        font-size: 0.9rem; /* Reduce the font size for smaller screens */
+    }
+
+    #contact_email h3, #contact_phone h3 {
+        font-size: 16pt; /* Increase the font size for smaller screens */
+    }
+}

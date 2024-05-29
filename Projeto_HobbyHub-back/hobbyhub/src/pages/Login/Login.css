@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@300&family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@300&family=Inter&display=swap');
+
+.main_login {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.left_login {
+    width: 500px;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card_left {
+    padding-top: 10%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    
+}
+
+.card_left h2 {
+    justify-content: center;
+    display: flex;
+    width: 100vw;
+    color: white;
+    font-size: 4vh;
+    font-style: normal;
+    line-height: normal;
+    font-family: 'Lilita One', cursive;
+    font-weight: 400;
+}
+
+.card_left img {
+    max-width: 100%; 
+    height: auto; 
+    margin-bottom: 3%; 
+}
+
+.right_login {
+    max-width: 700px; 
+    width: 90%; 
+    height: auto; 
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.card_right {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20%;
+}
+
+.card_right h1 {
+    color: #FFF;
+    font-size: 6vh;
+    font-weight: 400;
+    font-family: 'Lilita One', cursive;
+}
+
+.Ipts_Container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 75%;
+}
+.CIpts{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100px;
+}
+
+.IconC{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 20px;
+    height: 60px;
+    background: rgb(255, 255, 255);
+    border-radius: 0px 200px 200px 0px;
+}
+.icn-ipts{
+    font-size: 20pt;
+    color: purple;
+}
+.ContainerBTNlogin{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#ln-btns{
+    width: 1px;
+    height: 55px;
+    background-color:white;
+}
+
+.card_right #Esqueceu {
+    color: white;
+    display: flex;
+    width: 90%;
+    font-style: italic;
+    width: fit-content;
+    justify-content: start;
+    align-items: start;
+    font-family: 'Asap Condensed', sans-serif;
+    font-family: 'Inter', sans-serif;
+    margin-top: 3%;
+    align-self: flex-start;
+}
+
+.Link_alterarsenha {
+    width: 60%;
+}
+
+.btn {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 3%;
+    width: 100%;
+    cursor: pointer;
+}
+
+.btn {
+    width: 200px;
+    margin-top: 3%;
+    background-color: #8A01FF;
+    border: none;
+    border-radius: 10px;
+    height: 45px;
+    justify-content: center;
+    color: #FFF;
+    font-family: Lilita One;
+    font-size: 14pt;
+    transition: 0.4s;
+}
+
+.btn:hover{
+    width:220px;
+    height: 48px;
+}
+
+.btn a button {
+    width: 80%;
+    margin-top: 3%;
+    background-color: #8A01FF;
+    border: none;
+    border-radius: 10px;
+    height: 45px;
+    justify-content: center;
+    color: #FFF;
+    font-family: Lilita One;
+    font-size: 2.5vh;
+}
+
+.btn button:hover {
+    background-color: #6900c5;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.LinksLogin{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .main_login {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .left_login {
+        margin-top: -10%;
+        display: flex;
+        padding: 0;
+        width: 100%; /* Largura total em telas menores */
+        max-height: 40vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card_left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card_left h2 {
+        font-size: 5vh; /* Tamanho de fonte maior para dispositivos móveis */
+        text-align: center; /* Centralizar o texto */
+    }
+
+    .card_left img {
+        margin-top: -10%;
+        max-width: 100%; 
+        width: 60vw;
+    }
+
+    .right_login {
+        width: 100%; /* Largura total em telas menores */
+        max-width: 100vw;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+    }
+
+    .card_right {
+        width: 100%; /* Largura total em telas menores */
+        margin-top: -5vh;
+    }
+
+    .card_right h1 {
+        font-size: 5vh; /* Tamanho de fonte maior para dispositivos móveis */
+        text-align: center; /* Centralizar o texto */
+    }
+
+    .ContainerBTNlogin {
+        flex-direction: column; /* Alinhar botões verticalmente em telas menores */
+    }
+
+    .CIpts{
+        width: 70vw;
+    }
+
+    #ln-btns {
+        display: none; /* Ocultar a linha divisória em telas menores */
+    }
+
+    .card_right #Esqueceu {
+        font-size: 2.5vh; /* Tamanho de fonte maior para dispositivos móveis */
+        padding-top: 2vh;
+    }
+
+    .btn {
+        width: 50vw; /* Largura total em telas menores */
+        font-size: 4vh; /* Tamanho de fonte maior para dispositivos móveis */
+    }
+
+    .btn:hover {
+        width: 100%; /* Largura total em telas menores */
+    }
+
+    .btn a button {
+        width: 100%; /* Largura total em telas menores */
+        font-size: 3vh; /* Tamanho de fonte maior para dispositivos móveis */
+    }
+
+    .btn {
+        font-size: 3vh;
+    }
+
+    .btn a button {
+        font-size: 2vh;
+    }
+}

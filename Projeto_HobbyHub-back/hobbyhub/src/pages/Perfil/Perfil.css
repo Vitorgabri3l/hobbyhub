@@ -1,0 +1,185 @@
+.profile_main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.content_profile {
+    width: 100%;
+    height: 100vh;
+}
+
+.tittle_page {
+    padding-top: 5vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.tittle_page h1 {
+    color: white;
+    font-family: Lilita One;
+    font-weight: 400;
+    font-size: 2.3em;
+}
+
+.upload_img {
+    justify-content: center;
+    display: flex;
+}
+
+.upload_img img {
+    display: flex;
+    min-width: 300px;
+    height: 40vh;
+    width: 15vw;
+    border-radius: 50%;
+}
+
+.upload_img_btn {
+    display: flex;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.upload_button_profile {
+    display: flex;
+    width: 10vw;
+    height: 9vh;
+    flex-direction: column;
+    align-items: center;
+    background: transparent; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+ label.upload_button_profile {
+  margin: 0;
+ }
+
+  .upload_button_profile svg {
+        width: 15%;
+  }
+
+  .upload_img_btn p {
+    height: 3vh;
+    font-family: Lilita One;
+    font-weight: 400;
+  }
+  
+  #imageUpload {
+    display: none;
+    background-size: cover;
+  }
+  
+  .content_profile p.name {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: Lilita One;
+    font-weight: 400;
+  }
+
+  .content_profile p.user_name {
+    display: flex;
+    justify-content: center;
+    color: white;
+  }
+
+  .content_profile p.email {
+    display: flex;
+    justify-content: center;
+    color: white;
+  }
+
+  .btn_perfil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn_perfil .psswd {
+    color: black;
+    display: flex;
+    width: 30%;
+    height: 5vh;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+    background-color: #c2c2c2;
+    border: none;
+    border-radius: 15px;
+    font-size: 1em;
+    font-family: Lilita One;
+    font-weight: 200;
+  }
+
+  .btn_perfil .psswd:hover {
+    background-color: #8b8b8b;
+    cursor: pointer;
+  }
+
+  .btn_perfil .clear {
+    color: white;
+    display: flex;
+    width: 30%;
+    height: 5vh;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+    background-color: #8A01FF;
+    border: none;
+    border-radius: 15px;
+    font-size: 1em;
+    font-family: Lilita One;
+    font-weight: 200;
+  }
+
+  .btn_perfil .clear:hover {
+    background-color: #6900c5;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 768px) {
+
+    .content_profile {
+      justify-content: center;
+      width: 100%;
+    }
+
+    .upload_img {
+        flex-direction: column; /* Empilhe a imagem e o botão */
+        align-items: center;
+    }
+
+    .upload_img img {
+        min-width: 200px;
+        max-width: 30%; /* Reduza um pouco a largura da imagem */
+        width: 50vw;
+        height: 25vh;
+    }
+
+    .upload_img_btn {
+        flex-direction: column; /* Empilhe o botão e o texto */
+        text-align: center;
+    }
+
+    .upload_button_profile {
+        width: 60%; /* Reduza a largura do botão */
+    }
+
+    .btn_perfil .psswd {
+      width: 60vw;
+    }
+
+    .btn_perfil .clear {
+      width: 60vw;
+    }
+}
